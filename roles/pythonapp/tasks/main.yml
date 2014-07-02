@@ -1,0 +1,5 @@
+---
+- name: print value of sm_app_role
+  debug: var=sm_app_role
+  tags:
+    - test
