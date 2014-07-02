@@ -18,17 +18,17 @@ error)...
 
 Since I thought that variables are scoped to roles, I expected this output:
 
-  TASK: [bar | print value of sm_app_role] **************************************
-  ok: [localhost] => {
-      "sm_app_role": "{{ sm_app_role }}"
-  }
+    TASK: [bar | print value of sm_app_role] **************************************
+    ok: [localhost] => {
+        "sm_app_role": "{{ sm_app_role }}"
+    }
 
 But instead I get this:
 
-  TASK: [bar | print value of sm_app_role] **************************************
-  ok: [localhost] => {
-      "sm_app_role": "dog"
-  }
+    TASK: [bar | print value of sm_app_role] **************************************
+    ok: [localhost] => {
+        "sm_app_role": "dog"
+    }
 
 The latter seems to suggest that in at least some cases there is leakage of
 variables from one role to another. Why?
