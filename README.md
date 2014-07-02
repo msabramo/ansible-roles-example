@@ -1,5 +1,9 @@
 An experiment with ansible roles and variable scope
 
+Deals with topic mentioned in this thread:
+
+https://groups.google.com/forum/#!topic/Ansible-project/yrnsx2Mw6rc
+
 This defines a playbook with 3 roles:
 
 - foo
